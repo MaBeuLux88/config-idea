@@ -1,2 +1,2 @@
 # config-idea
-My settings for IDEA IntelliJ.
+My settings for IDEA IntelliJ and for linux.
