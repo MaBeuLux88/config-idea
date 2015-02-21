@@ -84,13 +84,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-alias ll='ls -l'
-alias la='ls -lA'
-alias l='ls -CF'
-alias rm='rm -i'
-alias cp='cp -i'
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -110,10 +103,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-PATH="$PATH:~/Softwares/vert.x-2.1M2/bin"
-PATH="$PATH:~/Softwares/apache-maven-3.1.1/bin"
-PATH="$PATH:~/Softwares/mongodb-linux-x86_64-2.6.5/bin"
-PATH="$PATH:~/Softwares/gradle-1.12/bin"
-PATH="$PATH:~/Softwares/node-v0.10.36-linux-x64/bin"
-

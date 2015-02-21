@@ -159,3 +159,13 @@ map Y y$
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
+" Map ctrl + backspace with ctrl + w = delete the previous word
+:imap <C-BS> <C-W>
+
+" Mettre cette ligne pour le snipMate : TextMate-style snippets for Vim 
+:filetype plugin on
+" Permet de plier des paragraphes - command 'za'
+set foldmethod=marker
+" Pour gérer les marqueurs de folding en latex
+set fmr=begin{,end{
+
