@@ -22,6 +22,12 @@ function dockertest {
   docker inspect $1 | grep IPAddress | cut -d \" -f 4
 }
 
+# Extract one MongoDB document from the collection in parameter
+function momo {
+  mongo --quiet axafake --eval "printjson(db.$1.findOne())" > $1.txt
+}
+#alias mongod='mongod --replSet "testElastic"'
+
 # SSH magic qui permet de récupérer un tunnel SSH vers yoda.
 alias vpn='ssh -p 80 -D 1234 polux@yoda'
 
@@ -33,7 +39,8 @@ export PATH=$M2:$PATH
 export PATH="$PATH:~/Softwares/vert.x-2.1M2/bin"
 export PATH="$PATH:~/Softwares/mongodb-linux-x86_64-2.6.7/bin"
 export PATH="$PATH:~/Softwares/gradle-1.12/bin"
-export PATH="$PATH:~/Softwares/node-v0.10.36-linux-x64/bin"
+#export PATH="$PATH:~/Softwares/node-v0.10.36-linux-x64/bin"
+#export PATH="$PATH:~/Softwares/node-v0.12.0-linux-x64/bin"
 
 # Pour tmux
 #chmod 777 ~/.tmux
