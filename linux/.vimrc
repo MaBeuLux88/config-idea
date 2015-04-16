@@ -163,7 +163,9 @@ nnoremap <C-L> :nohl<CR><C-L>
 :imap <C-BS> <C-W>
 
 " Mettre cette ligne pour le snipMate : TextMate-style snippets for Vim 
-:filetype plugin on
+" This shit also breaks the copy paste with mouse middle click
+":filetype plugin on
+
 " Permet de plier des paragraphes - command 'za'
 set foldmethod=marker
 " Pour gérer les marqueurs de folding en latex
