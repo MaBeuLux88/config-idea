@@ -1,2 +1,8 @@
-# config-idea
-My settings for IDEA IntelliJ and for linux.
+# Config files
+
+This repository contains my main config files.
+
+- IntelliJ
+- Pycharm
+- Linux PC & Laptop
+
