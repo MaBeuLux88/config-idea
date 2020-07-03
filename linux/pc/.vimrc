@@ -24,6 +24,7 @@ set nocompatible
 " Enable syntax highlighting
 syntax on
 
+set maxmempattern=2000000
 
 "------------------------------------------------------------
 " Must have options {{{1
@@ -123,7 +124,7 @@ set cmdheight=1
 "set number
 
 " Quickly time out on keycodes, but never time out on mappings
-set notimeout ttimeout ttimeoutlen=200
+"set notimeout ttimeout ttimeoutlen=200
 
 " Use <F11> to toggle between 'paste' and 'nopaste'
 "set pastetoggle=<F11>
@@ -163,9 +164,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 :imap <C-BS> <C-W>
 
 " Mettre cette ligne pour le snipMate : TextMate-style snippets for Vim 
-" This shit also breaks the copy paste with mouse middle click
 ":filetype plugin on
-
 " Permet de plier des paragraphes - command 'za'
 "set foldmethod=marker
 " Pour gérer les marqueurs de folding en latex
