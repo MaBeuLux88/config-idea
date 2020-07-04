@@ -19,6 +19,7 @@ alias up='sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get up
 alias stop='/sbin/shutdown -h now'
 alias mouse='watch -n 0.1 xdotool getmouselocation'
 alias edit='vim ~/.bash_aliases'
+alias secrets='vim ~/.bash_secrets'
 alias conf='vim ~/.config/i3/config'
 alias sobashrc='source ~/.bashrc'
 alias chrome="ps aux | grep chrome | grep -v grep | sed 's/ \+/\t/g' | cut -f4 | paste -s -d + - | bc"
