@@ -11,6 +11,7 @@ FOLDER=$1
 cp -f ~/.bashrc ${FOLDER}/.
 cp -f ~/.bash_aliases ${FOLDER}/.
 cp -f ~/.vimrc ${FOLDER}/.
+cp -f ~/.gitconfig $FOLDER/.
 cp -f /etc/i3status.conf ${FOLDER}/.
 cp -rf ~/.config/i3 ${FOLDER}/.
 
