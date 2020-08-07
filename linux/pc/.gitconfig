@@ -5,16 +5,23 @@
 	editor = vim
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
+	diff = auto
+	status = auto
+	branch = auto
 	ui = true
 [credential]
 	helper = cache --timeout=43200
 [alias]
+	git = ! git
 	co = checkout
 	ci = commit
 	st = status
 	br = branch
-        ciane = commit --all --amend --no-edit
-        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
+	ciane = commit --all --amend --no-edit
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
+	lga = log --graph --decorate --date-order --full-history --pretty=format:'%C(yellow)%h%Creset <%C(red)%an%Creset> (%C(green)%ai%Creset)%C(auto)%d%Creset %s' --all
+	glog = log --graph --oneline --decorate --branches --tags --date-order --full-history
+	pt = !git tag -l | xargs git tag -d && git fetch -t
 	yolo = !git add -A && git commit -m \"$(curl --silent --fail https://whatthecommit.com/index.txt)\"
 [color "diff-highlight"]
 	oldNormal = red bold
@@ -30,3 +37,5 @@
 	whitespace = red reverse
 [pull]
 	rebase = true
+[fetch]
+	prune = true
