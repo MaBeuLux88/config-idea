@@ -24,6 +24,7 @@ alias secrets='vim ~/.bash_secrets'
 alias conf='vim ~/.config/i3/config'
 alias sobashrc='source ~/.bashrc'
 alias chrome="ps aux | grep chrome | grep -v grep | sed 's/ \+/\t/g' | cut -f4 | paste -s -d + - | bc"
+alias snooty="cd ~/Softwares/snooty && ./snooty build ~/Work/devhub-content; cd - > /dev/null"
 
 export EDITOR='/usr/bin/vim'
 
@@ -31,6 +32,7 @@ export EDITOR='/usr/bin/vim'
 alias github='xclip ~/Documents/github-token.txt'
 alias st='git status'
 alias br='git br -a'
+alias frb='git fetch upstream && git rebase upstream/master'
 alias gitkall='gitk --all'
 function pr {
   git fetch upstream pull/$1/head:pr-$1
